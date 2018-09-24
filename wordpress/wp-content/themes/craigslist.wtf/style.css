@@ -9,7 +9,7 @@ Text Domain: craigslist.wtf
 */
 
 body {
-  background-color: #F5F5F5;
+  background-color: #fafafa;
 }
 
 ::-moz-selection {
@@ -172,8 +172,7 @@ footer li:nth-child(1) {
 }
 
 nav {
-  /* background-color: #fafafa; */
-  background-color: #f5f5f5;
+  background-color: #fafafa;
   top: 100px;
   z-index: 1001;
 }
@@ -246,6 +245,15 @@ margin-top: 2%;
   }
 
   .acf-field-5b7d3a8b10730 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .addmore {
+    position: absolute;
+    top: 2px;
+    left: 230px;
+    color: blue;
     grid-column-start: 1;
     grid-column-end: 4;
   }
@@ -400,7 +408,7 @@ margin-top: 2%;
   }
 
   .secondary-queries {
-    background-color: #F5F5F5;
+    background-color: #fafafa;
   }
 
   .search-category {
@@ -446,7 +454,7 @@ margin-top: 2%;
     }
 
     .secondary-queries {
-      background-color: #F5F5F5;
+      background-color: #fafafa;
     }
 
     .right-column  {
@@ -584,17 +592,17 @@ margin-top: 2%;
 
   .btn-primary {
     margin-top: -5px;
-    padding: 1px;
+    padding: 0px 3px;
     font-size: 10px;
     background-color: white;
     color: black;
     border-color: gray;
   }
 
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: black;
-    background-color: white;
-    border-color: gray; /*set the color you want here*/
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    color: black !important;
+    background-color: white !important;
+    border-color: gray !important; /*set the color you want here*/
 }
 
   .list-item {

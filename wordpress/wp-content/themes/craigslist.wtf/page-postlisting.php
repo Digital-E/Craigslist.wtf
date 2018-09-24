@@ -59,4 +59,24 @@ acf_form( $args );
   });
 </script>
 
+<script type="text/javascript">
+  (function($){
+    $(".acf-field-image:eq(0) .acf-input").append('<div class="addmore">add more(+)</div>');
+    $('.acf-field-image:eq(1)').css({display:'none',opacity:0});
+    $('.acf-field-image:eq(2)').css({display:'none',opacity:0});
+    $('.acf-field-image:eq(3)').css({display:'none',opacity:0});
+    $('.acf-field-image:eq(4)').css({display:'none',opacity:0});
+
+    $('.addmore').click(function(){
+      $('.acf-field-image:eq(1)').css({display:'inline'}).animate({opacity:1},1000,function(){});
+      $('.acf-field-image:eq(2)').css({display:'inline'}).animate({opacity:1},1000,function(){});
+      $('.acf-field-image:eq(3)').css({display:'inline'}).animate({opacity:1},1000,function(){});
+      $('.acf-field-image:eq(4)').css({display:'inline'}).animate({opacity:1},1000,function(){});
+      $(this).animate({bottom:'+10',opacity:0},1000,function(){
+        // $(this).css({'display':'none'})
+      });
+    })
+  })(jQuery);
+</script>
+
 <?php get_footer(); ?>
