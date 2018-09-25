@@ -14,10 +14,10 @@ get_header(); ?>
 
 <div class="main row">
 <div class="left-column d-none d-sm-block col-12 col-sm-5 col-md-5">
-  <p id="sub-category-display" class="d-none d-sm-block col-12 col-sm-12"><?php echo get_the_category( $postId )[0]->name ?> > <?php echo get_the_category( $postId )[1]->name ?> <span id="post-count-moved"></span></p>
+  <p id="sub-category-display" class="d-none d-sm-block col-12 col-sm-12"><?php echo get_the_category( $postId )[1]->name ?> > <?php echo get_the_category( $postId )[0]->name ?> <span id="post-count-moved"></span></p>
 <?php global $post;
 $postId = $post->ID;
-$categoryID = get_the_category($postId)[1]->term_id;
+$categoryID = get_the_category($postId)[0]->term_id;
 ?>
   <p class="isthismobile"></p>
   <div class="scrollable">

@@ -26,7 +26,7 @@ get_header(); ?>
 <h1 id="category-forsale-title" class="text-center"><span id="category-forsale">for sale</span></h1>
 </div>
 <div class="container">
-<div class="forSale row col-10 col-md-6 category-center mt-5 mb-5" style="display:none;">
+<div class="forSale row col-10 col-md-10 col-lg-8 category-center mt-5 mb-5" style="display:none;">
 
     <div class="col-6 col-md-3">
       <div class="">all</div>
@@ -80,7 +80,7 @@ get_header(); ?>
   </div>
   <div class="container">
 
-  <div id="" class="jobs row col-10 col-md-3 category-center mt-5 mb-5" style="display:none;">
+  <div id="" class="jobs row col-md-6 col-lg-3 category-center mt-5 mb-5" style="display:none;">
 
       <div class="col-6 col-md-6">
         <div class="">all</div>
@@ -120,7 +120,7 @@ get_header(); ?>
   <h1 id="category-community-title" class="text-center"><span id="category-community">community</span></h1>
   </div>
   <div class="container">
-  <div id="" class="community row col-10 col-md-3 category-center mt-5 mb-5" style="display:none;">
+  <div id="" class="community row col-10 col-md-6 col-lg-3 category-center mt-5 mb-5" style="display:none;">
 
       <div class="col-6 col-md-6">
         <div class="">all</div>
@@ -151,7 +151,7 @@ get_header(); ?>
   <h1 id="category-personals-title" class="text-center"><span id="category-personals">personals</span></h1>
   </div>
   <div class="container">
-  <div id="" class="personals row col-10 col-md-3 category-center mt-5 mb-5" style="display:none;">
+  <div id="" class="personals row col-10 col-md-6 col-lg-3 category-center mt-5 mb-5" style="display:none;">
 
       <div class="col-6 col-md-6">
         <div class="">all</div>
@@ -182,7 +182,7 @@ get_header(); ?>
   <h1 id="category-housing-title" class="text-center"><span id="category-housing">housing</span></h1>
 </div>
 <div class="container">
-<div id="" class="housing row col-10 col-md-3 category-center mt-5 mb-5" style="display:none;">
+<div id="" class="housing row col-10 col-md-6 col-lg-3 category-center mt-5 mb-5" style="display:none;">
 
     <div class="col-6">
       <div class="">all</div>

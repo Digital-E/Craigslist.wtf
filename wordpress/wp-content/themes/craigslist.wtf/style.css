@@ -635,6 +635,11 @@ margin-top: 2%;
     background-size: 25px;
     border: 1px solid #000BFF;
     height: 40px;
+    box-shadow: 0px 1px 3px #c2c2c2;
+  }
+
+  #general-nav-search input:focus {
+    box-shadow: 1px 2px 5px #c2c2c2;
   }
 
 /* Home Page Styling */
