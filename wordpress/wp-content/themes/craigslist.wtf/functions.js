@@ -123,7 +123,7 @@
             $('#listing_view').replaceWith(result);
             $('#listing_view').css({"opacity" : "0"});
             $('#listing_view').animate({"opacity":"1"},500);
-          },1000);
+          },0);
       }
 
       });

@@ -9,6 +9,8 @@
     <?php the_content();?>
    <h2><?php the_field('title') ?>&nbsp-&nbsp<?php the_field('price') ?>&nbsp<span id="listing_view_location">(<?php the_field('location') ?>)</span></h2>
    <div class="scrollable">
+    <div class="scrollable-gradient"></div>
+    <div class="scrollable-spacer"></div>
    <div><span id="numberOfViews"><?php echo pvc_get_post_views( $post_id = $postId );?> views &nbsp &nbsp</span><span id="numberOfLikes"><span class="numberOfLikes"></span> interested</span></div>
    <?php
 

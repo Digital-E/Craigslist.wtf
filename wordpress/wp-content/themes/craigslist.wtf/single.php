@@ -71,9 +71,10 @@ wp_reset_postdata();
                  $image5 = get_field('image_5');
                  $images = array($image1, $image2, $image3, $image4, $image5) ?>
            <?php if(function_exists('wp_ulike')) wp_ulike('get');?>
-           <h2><?php the_field('title') ?>&nbsp-&nbsp<?php the_field('price') ?>&nbsp<span id="listing_view_location">(<?php the_field('location') ?>)</span></h2>
+           <div id="title"><h2><?php the_field('title') ?>&nbsp-&nbsp<?php the_field('price') ?>&nbsp<span id="listing_view_location">(<?php the_field('location') ?>)</span></h2></div>
            <div class="scrollable">
-
+             <div class="scrollable-gradient"></div>
+             <div class="scrollable-spacer"></div>
            <div><span id="numberOfViews"><?php echo pvc_get_post_views( $post_id = $postId );?> views &nbsp &nbsp</span><span id="numberOfLikes"><span class="numberOfLikes"></span> interested</span></div>
 
            <?php
