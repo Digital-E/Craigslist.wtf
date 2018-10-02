@@ -161,6 +161,7 @@ footer {
   background-color: white;
   margin: auto;
   z-index: 5001;
+  overflow: hidden;
 }
 
 footer li {
@@ -367,6 +368,7 @@ margin-top: 2%;
   @media (min-width: 576px) {
     #sub-category-display {
       margin-left: 45px;
+      padding-right: 45px;
       margin-top: 30px;
       color: #000BFF;
       font-size:37px;
@@ -690,7 +692,7 @@ margin-top: 2%;
   .title {
     font-size: 21px;
   }
-  
+
 .title a {
   color: #000BFF;
   font-size: 21px;
