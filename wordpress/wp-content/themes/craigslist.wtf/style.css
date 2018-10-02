@@ -563,6 +563,22 @@ margin-top: 2%;
     .left-column .wpulike-heart .wp_ulike_general_class {
       position: absolute;
       margin-top: 7px;
+      margin-left: 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .left-column .wpulike-heart .wp_ulike_general_class {
+      position: absolute;
+      margin-top: 7px;
+      margin-left: 10px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .left-column .wpulike-heart .wp_ulike_general_class {
+      position: absolute;
+      margin-top: 7px;
       margin-left: 100px;
     }
   }
@@ -584,7 +600,6 @@ margin-top: 2%;
   @media (min-width: 768px) {
 
     .post-date {
-      display: inline-block;
       width: 60px !important;
       margin-left: 0px !important;
     }
@@ -648,19 +663,38 @@ margin-top: 2%;
     padding: 10px 10px;
     margin-left: 0px;
     font-family: times;
+    overflow-wrap: break-word;
   }
 
   @media (min-width: 576px) {
     .list-item {
-      padding: 10px 100px;
+      padding: 10px 0px 10px 10px;
+      margin-left: 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .list-item {
+      padding: 10px 0px 10px 40px;
+      margin-left: 0px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .list-item {
+      padding: 10px 0px 10px 100px;
       margin-left: 30px;
     }
   }
 
-  .list-item a {
-    color: #000BFF;
+  .title {
     font-size: 21px;
   }
+  
+.title a {
+  color: #000BFF;
+  font-size: 21px;
+}
 
   .right-column i {
     font-size: 18px;
