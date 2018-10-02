@@ -57,29 +57,7 @@ outline: none;
 box-shadow: none;
 }
 
-#posting-under {
-  display: none;
-  padding-top: 15px;
-}
-
-@media (min-width: 768px) {
-  #posting-under {
-    padding-top: 90px;
-  }
-}
-
-#posting-under select {
-  width: 20%;
-  border: none;
-  box-shadow: 0px 0px 3px gray;
-  -webkit-appearance: none;
- -webkit-border-radius: 0px;
- color: #000BFF;
-}
-
-#posting-under span {
-  color: gray;
-}
+/* ---------- POST NEW LISTING PAGE */
 
 #acf-field_5b7d3a8b10730 {
   border: none;
@@ -125,7 +103,6 @@ box-shadow: none;
     /* height: 100vh; */
   /* background-color: red; */
   /* box-shadow: 0 0 0 4px #fafafa, 0 -3px 10px black; */
-
 }
 
 
@@ -137,8 +114,106 @@ box-shadow: none;
     height: 100vh;
   background-color: white;
   /* box-shadow: 0 0 0 4px #fafafa, 0 -3px 10px black; */
-
 }
+
+.acf-label {
+  display: none;
+}
+
+.acf-fields {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+}
+
+.acf-field-5b7d3a8b10730 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.addmore {
+  position: absolute;
+  top: 2px;
+  left: 230px;
+  color: blue;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b68296a6327b {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b6829f61eef4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b8cf01a26d7e {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b8da88b06177 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b8da8a206178 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b8e2c9d47e99 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b97e796cf740 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b97e7b6cf741 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media (max-width: 576px) {
+.acf-field-5b8da88b06177 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b8da8a206178 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.acf-field-5b8e2c9d47e99 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+}
+
+.acf-fields > .acf-field {
+  border-top: none;
+  padding: 0;
+}
+
+.acf-form-submit input {
+  display: block;
+  margin: auto;
+}
+
+.acf-notice {
+  display: none;
+}
+
+/* --------------- FOOTER CONFIG */
 
 .footer-mobile {
   width: 100%;
@@ -232,105 +307,7 @@ margin-top: 2%;
 
 }
 
-
-  .acf-label {
-    display: none;
-  }
-
-  .acf-fields {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
-  }
-
-  .acf-field-5b7d3a8b10730 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .addmore {
-    position: absolute;
-    top: 2px;
-    left: 230px;
-    color: blue;
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b68296a6327b {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b6829f61eef4 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b8cf01a26d7e {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b8da88b06177 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b8da8a206178 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b8e2c9d47e99 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b97e796cf740 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b97e7b6cf741 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-@media (max-width: 576px) {
-  .acf-field-5b8da88b06177 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b8da8a206178 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .acf-field-5b8e2c9d47e99 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-}
-
-  .acf-fields > .acf-field {
-    border-top: none;
-    padding: 0;
-  }
-
-  .acf-form-submit input {
-    display: block;
-    margin: auto;
-  }
-
-  .acf-notice {
-    display: none;
-  }
-
-  /* Sub-Category Listings View Page */
+  /* -------------- Sub-Category Listings View Page */
 
   #content {
     position: relative;
@@ -485,8 +462,6 @@ margin-top: 2%;
     padding: 0px 10px;
     margin-top: 40px;
     background-color: white;
-     /* overflow: auto; */
-    /* height: auto; */
   }
 
   .right-column .scrollable-gradient {
@@ -600,7 +575,6 @@ margin-top: 2%;
   }
 
   @media (min-width: 768px) {
-
     .post-date {
       width: 60px !important;
       margin-left: 0px !important;
