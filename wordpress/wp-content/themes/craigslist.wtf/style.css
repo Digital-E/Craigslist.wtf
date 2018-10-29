@@ -283,11 +283,25 @@ margin-top: 2%;"
 #general-nav-post {
 transform: rotate(9deg);
 margin-top: 2%;
+white-space: nowrap;
 }
+
+@media (min-width: 576px) {
+  .layer1-header {
+    padding-top: 70px;
+    }
+  }
 
 @media (min-width: 768px) {
   .layer1-header {
-    padding-top: 40px;
+    padding-top: 60px;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .layer1-header {
+     padding-top: 40px;
+    }
   }
 
   #general-nav-search {
@@ -333,6 +347,8 @@ margin-top: 2%;
   #post-count-moved {
     font-size: 17px;
     color: grey;
+    display: inline-block;
+    /* overflow-wrap: break-word; */
   }
 
   #sub-category-display {
@@ -602,18 +618,20 @@ margin-top: 2%;
   }
 
   .left-column .author {
-    position: relative;
+    /* position: relative;
     margin-left: 77px;
-    margin-top: -6px;
+    margin-top: -6px; */
+    /* display: inline-block; */
     font-size: 15px;
     color: gray;
   }
 
   @media (min-width: 576px) {
     .left-column .author {
-      position: relative;
+      /* position: relative;
       margin-left: 59px;
-      margin-top: -6px;
+      margin-top: -6px; */
+      /* display: inline-block; */
       font-size: 15px;
       color: gray;
     }

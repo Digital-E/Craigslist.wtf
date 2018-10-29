@@ -41,7 +41,7 @@ echo '<div id="post-count" style="display:none;">'.$count.'</div>';
         &nbsp<span class="title"><a class="the_link" href=' . get_the_permalink() . '>' . get_the_title() . '</a></span>
         &nbsp<span class="post-price btn btn-primary">' . get_field('price') . '</span>
         &nbsp<span class="post-location">(' . get_field('location') . ')</span>
-        <div class="author">by ' . get_field('username') .'</div></div>
+        &nbsp<span class="author">by ' . get_field('username') .'</span></div>
         ';
 
     }
@@ -71,7 +71,7 @@ wp_reset_postdata();
                  $image5 = get_field('image_5');
                  $images = array($image1, $image2, $image3, $image4, $image5) ?>
            <?php if(function_exists('wp_ulike')) wp_ulike('get');?>
-           <div id="title"><h2><?php the_field('title') ?>&nbsp-&nbsp<?php the_field('price') ?>&nbsp<span id="listing_view_location">(<?php the_field('location') ?>)</span></h2></div>
+           <div id="title"><h2><?php the_field('title') ?>&nbsp-&nbsp<?php the_field('price') ?>&nbsp<div id="listing_view_location">(<?php the_field('location') ?>)</div></h2></div>
            <div class="scrollable">
              <div class="scrollable-gradient"></div>
              <div class="scrollable-spacer"></div>

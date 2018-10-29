@@ -7,7 +7,7 @@
           $image5 = get_field('image_5');
           $images = array($image1, $image2, $image3, $image4, $image5) ?>
     <?php the_content();?>
-   <div id="title"><h2><?php the_field('title') ?>&nbsp-&nbsp<?php the_field('price') ?>&nbsp<span id="listing_view_location">(<?php the_field('location') ?>)</span></h2></div>
+   <div id="title"><h2><?php the_field('title') ?>&nbsp-&nbsp<?php the_field('price') ?>&nbsp<div id="listing_view_location">(<?php the_field('location') ?>)</div></h2></div>
    <div class="scrollable">
     <div class="scrollable-gradient"></div>
     <div class="scrollable-spacer"></div>

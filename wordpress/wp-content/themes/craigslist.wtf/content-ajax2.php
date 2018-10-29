@@ -23,7 +23,7 @@ echo '<div id="post-count" style="display:none;">'.$count.'</div>';
       &nbsp<span class="title"><a class="the_link" href=' . get_the_permalink() . '>' . get_the_title() . '</a></span>
       &nbsp<span class="post-price btn btn-primary">' . get_field('price') . '</span>
       &nbsp<span class="post-location">(' . get_field('location') . ')</span>
-      <div class="author">by ' . get_field('username') .'</div></div>
+      &nbsp<span class="author">by ' . get_field('username') .'</span></div>
       ';
 
   }

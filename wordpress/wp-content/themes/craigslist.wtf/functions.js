@@ -45,7 +45,7 @@
         }
         });
 
-      },0);
+      },1000);
 
     });
 
@@ -54,18 +54,6 @@
     $(document).on('click', '.right-column .wpulike', function (event){
 
       var postId2 = $(this).find("a").attr("data-ulike-id");
-      // var postId2Matched;
-      //
-      // var itemsInList = $(".list-main .wpulike");
-      // for(var i=0; i < itemsInList.length; i++) {
-      //   // console.log(itemsInList[i].children[0].children[0].getAttribute("data-ulike-id"));
-      //   var itemInList = itemsInList[i].children[0].children[0].getAttribute("data-ulike-id");
-      //   if (itemInList == postId2) {
-      //     postId2Matched = itemsInList[i];
-      //     console.log(postId2Matched);
-      //   }
-      // }
-
 
       setTimeout(function(){
 
@@ -83,7 +71,7 @@
         }
         });
 
-      },0);
+      },1000);
 
     });
 

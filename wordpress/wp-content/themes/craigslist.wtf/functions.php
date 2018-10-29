@@ -21,6 +21,7 @@ function craigslistwtf_enqueue_scripts() {
     wp_enqueue_script('bootstrap', get_template_directory_uri().'/bootstrap/js/bootstrap.min.js', $dependencies, '3.3.6', true );
 }
 
+
 add_action( 'wp_enqueue_scripts', 'craigslistwtf_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'craigslistwtf_enqueue_scripts' );
 
@@ -30,7 +31,7 @@ add_action( 'wp_enqueue_scripts', 'theme_register_scripts', 1 );
 	  /** Register JavaScript Functions File */
 	  // wp_register_script( 'functions-js', esc_url( trailingslashit( get_template_directory_uri() ) . 'functions.js' ), array( 'jquery' ), time(), true );
     wp_register_script( 'functions-js', esc_url( trailingslashit( get_template_directory_uri() )) . 'functions.js' );
-    // wp_register_script('flexslider', esc_url( trailingslashit( get_template_directory_uri() )) .'jquery.flexslider.js');
+
 	  /** Localize Scripts */
 	  $wp_ajax = array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) );
 	  wp_localize_script( 'functions-js', 'wp_ajax', $wp_ajax );
